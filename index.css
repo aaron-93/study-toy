@@ -1,0 +1,45 @@
+header {
+  width: 100%;
+  height: 600px;
+  position: relative;
+  /* background: url(https://www.artinsight.co.kr/data/tmp/1908/1501cf89202c25ce439949ffd767c3dd_IUDfUfz6jJVJ.jpg) */
+  /* no-repeat 100% 100% fixed; */
+  /* background-size: cover;
+  background-position: center; */
+}
+
+.background {
+  width: 100%;
+  height: 600px;
+  position: absolute;
+  z-index: -1;
+  background-size: cover;
+  background-position: center;
+}
+
+.header {
+  padding: 0px 50px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  /* z-index: 1; */
+  height: 60px;
+
+  align-items: center;
+  justify-items: center;
+}
+.header__center {
+  display: flex;
+  justify-content: center;
+  /* align-items: center; */
+}
+.header__right--nav {
+  display: flex;
+  /* align-items: center; */
+  justify-content: flex-end;
+}
+
+.header__center > div,
+.header__right--nav > div,
+.header__right--login > span {
+  padding: 0px 10px;
+}
