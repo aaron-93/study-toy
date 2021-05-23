@@ -64,3 +64,8 @@ a {
   text-decoration: none;
   color: black;
 }
+
+.search--bar__container {
+  display : flex;
+  justify-content : center;
+}
