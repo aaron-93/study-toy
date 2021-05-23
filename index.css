@@ -1,0 +1,66 @@
+header {
+  width: 100%;
+  height: 600px;
+  position: relative;
+  /* background: url(http://t1.daumcdn.net/friends/prod/editor/dc8b3d02-a15a-4afa-a88b-989cf2a50476.jpg); */
+  /* no-repeat 100% 100% fixed; */
+  /* background-size: cover;
+  background-position: center; */
+}
+
+.background {
+  width: 100%;
+  height: 600px;
+  position: absolute;
+  z-index: -1;
+  /* background-size: cover; */
+  background-position: center;
+}
+
+.header {
+  padding: 0px 50px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  /* z-index: 1; */
+  height: 60px;
+  align-items: center;
+  justify-content: center;
+}
+.header__center {
+  display: flex;
+  justify-content: center;
+
+  /* align-items: center; */
+}
+
+.header__right--nav {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.header__center > div,
+.header__right--nav > div,
+.header__right--login > span {
+  padding: 0px 10px;
+}
+
+.header__right--setting:hover {
+  cursor: pointer;
+  background-color: #fff;
+  border-top-left-radius: 50px;
+  border-top-right-radius: 50px;
+  border-bottom-right-radius: 50px;
+  border-bottom-left-radius: 50px;
+  padding: 10px;
+}
+.header__right--login span:hover {
+  cursor: pointer;
+  background-color: #fff;
+  border-radius: 50%;
+  padding: 10px;
+}
+a {
+  text-decoration: none;
+  color: black;
+}
